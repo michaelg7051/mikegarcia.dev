@@ -1,0 +1,110 @@
+@import './styles/variables';
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+
+  .title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 82px;
+    color: $color-black;
+
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
+  }
+
+  .offer {
+    font-size: 25px;
+    text-align: center;
+    color: #282A35;
+    margin: 50px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .cardHolder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+
+      .bestTag {
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        color: #04AA6D;
+        height: 40px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 5px 5px;
+        width: 292px;
+        height: 388px;
+
+        .noOfLessons {
+          font-weight: 400;
+          font-size: 40px;
+          color: #282A35;
+        }
+        .lesson {
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          color: #282A35;
+        }
+        .price {
+          font-weight: 700;
+          font-size: 30px;
+          color: $color-black;
+          margin: 30px 0px;
+        }
+        .noOfHours {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 60px;
+          line-height: 70px;
+          color: #282A35;
+        }
+        .hour {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          color: #282A35;
+        }
+        .save {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          color: #282A35;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .contactMe {
+    background-color: #47423F !important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    color: $color-white !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    text-transform: none !important;
+  }
+}

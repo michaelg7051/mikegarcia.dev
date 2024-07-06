@@ -1,0 +1,49 @@
+@import './styles/variables';
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #47423F;
+  padding: 50px 0px;
+
+  .title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 82px;
+    color: $color-pink;
+    margin-bottom: 80px;
+
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
+  }
+
+  .contactMeForm {
+    width: 75%;
+
+    .label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+      color: $color-pink;
+    }
+
+    .actionBar {
+      display: flex;
+      justify-content: center;
+
+      .sendButton {
+        background-color: #798488 !important;
+        border-radius: 20px !important;
+        font-size: 16px !important;
+        color: $color-white !important;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        text-transform: none !important;
+      }
+    }
+
+  }
+}

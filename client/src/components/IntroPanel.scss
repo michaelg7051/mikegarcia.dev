@@ -1,0 +1,98 @@
+@import './styles/variables';
+
+.introPanel {
+  background: url('/images/background.png');
+  background-color: #282A35;
+  height: 750px;
+
+  @media (max-width: 820px) {
+    height: 960px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .title {
+      margin: 40px 0px;
+
+      @media (max-width: 820px) {
+        margin: 20px 0px;
+        text-align: center;
+      }
+
+      .subTitle {
+        color: $color-white;
+        font-family: Arial, Tahoma, Verdana, Segoe, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: 450px) {
+          font-size: 15px;
+        }
+      }
+      
+      .mainTitle {
+        color: $color-white;
+        font-family: Arial, Tahoma, Verdana, Segoe, sans-serif;
+        font-weight: 300;
+        font-size: 60px;
+        margin-top: 0px;
+
+        @media (max-width: 450px) {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .actionButton {
+      background-color: $color-pink !important;
+      border-radius: 20px !important;
+      font-size: 16px !important;
+      color: $color-white !important;
+      font-weight: 700 !important;
+      font-size: 20px !important;
+      text-transform: none !important;
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .highlights {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 75px;
+
+      @media (max-width: 820px) {
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+
+      .highlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px;
+        width: 210px;
+
+        .point-1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 25px;
+          color: $color-pink;
+        }
+        
+        .point-2 {
+          font-style: normal;
+          font-size: 20px;
+          line-height: 25px;
+          color: $color-white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

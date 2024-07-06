@@ -1,0 +1,68 @@
+@import './styles/variables.scss';
+
+.howITeach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+
+  .howITeachTitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 82px;
+    color: $color-black;
+    margin-bottom: 100px;
+
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
+  }
+
+  .modes {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 820px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      color: $color-white;
+      width: 620px;
+      margin: 10px;
+
+      @media (max-width: 820px) {
+        width: 90%;
+      }
+
+      .cardMedia {
+        width: 100%;
+      }
+
+      .cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+
+        .cardTitle {
+          font-weight: 400;
+          font-size: 30px;
+          color: $color-black;
+
+          @media (max-width: 450px) {
+            font-size: 25px;
+          }
+        }
+
+        .cardDescription {
+          font-weight: 300;
+          font-size: 20px;
+          color: $color-black;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

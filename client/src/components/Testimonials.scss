@@ -1,0 +1,60 @@
+@import './styles/variables';
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-pink;
+  padding: 50px 0px;
+
+  .title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 82px;
+    color: $color-black;
+    margin-bottom: 100px;
+
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 40px;
+      border-radius: 10px;
+      margin: 15px 0px;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+  
+      .testimonial {
+        margin-left: 40px;
+
+        @media (max-width: 600px) {
+          margin-top: 25px;
+        }
+
+        .command {
+          font-weight: 300;
+          font-size: 20px;
+          color: $color-black;
+        }
+        .sign {
+          font-weight: 300;
+          font-size: 30px;
+          color: $color-black
+        }
+      }
+    }
+  }
+}
